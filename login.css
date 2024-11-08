@@ -3,6 +3,7 @@
     padding: 0;
     text-transform: capitalize;
 }
+
 #login{
     color: green;
     font-family: 'Times New Roman', Times, serif;
@@ -14,6 +15,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 .container{
     border: 2px solid rgb(201, 196, 196);
@@ -44,4 +46,9 @@ input{
    background-color: green;
    display: block;
    margin-top: 20px;
+  
+}
+a{
+    text-decoration: none;
+    color: alicebluex;
 }

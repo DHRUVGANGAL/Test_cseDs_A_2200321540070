@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-transform: capitalize;
+}
+.header{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+h1{
+    color: green;
+    background-color: yellow;
+}
+h2{
+    color: rgb(109, 203, 14);
+    
+    
+}
