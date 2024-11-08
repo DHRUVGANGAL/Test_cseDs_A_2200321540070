@@ -1,18 +1,24 @@
-async function fetchdata() {
-    try {
-      let response = await fetch("https://api.github.com/users?per_page=10");
-      let data = await response.json();
-      data.forEach((element) => {
-        let h1 = document.createElement("h1");
-        h1.textContent = element.node_id;
-        let a = document.createElement("a");
-        a.textContent = element.node_id;
-        a.setAttribute("href", element.html_url);
-        let top=document.getElementById('top');
-        top.appendChild(h1);
-        top.appendChild(a);
-      });
-    } catch (error) {
-      console.log(error);
-    }
-  }
+const main=document.getElementsByClassName("main")
+        const val=document.getElementById("sorted").value 
+        console.log(val)
+
+        async function displayUsers(){
+        const data=await fetch("https://api.github.com/users")
+        const rest=await data.json()
+        let res=[]
+        for(let i=0;i<11;i++){
+            res[i]=rest[i]
+        }
+        let list=document.createElement("ul")
+        let item=document.createElement("li")
+        res.map((data)=>{
+            let item=document.createElement("li")
+            item.innerHTML=`<a>${data.login}</a>`
+            list.appendChild(item)
+        })
+        main.appendChild(list)
+        }
+
+function logout(){
+  window.location.href = "login.html";
+}

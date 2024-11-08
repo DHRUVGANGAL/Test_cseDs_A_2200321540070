@@ -12,10 +12,10 @@
     <h2>Welcome Admin</h2>
     </div>
      <div class="container">
-     <button onclick="fetchdata()">
+     <button onclick="displayUsers()" class="fetch">
         fetch top 10 github user
      </button>
-     <select name="" id="">
+     <select name="sort" id="sorted">
         <option value="default">
             default
         </option>
@@ -23,6 +23,9 @@
             alphabtical
         </option>
      </select>
+     <div class="main">
+        <button class="Logout" onclick="logout()"> logout</button>
+     </div>
     </div>
 <script src="dashboad.js"></script>
 </body>

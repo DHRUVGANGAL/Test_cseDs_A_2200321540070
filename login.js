@@ -1,13 +1,3 @@
-// let username=document.getElementById(username).value;
-// let password=document.getElementById(password).value;
-
-
-// function login(){
-//     if(username==="admin"&&password==="admin"){
-//         window.open('dashboad.html', '_blank');
-//     }
-// }
-
 function submitHandler(event) {
     event.preventDefault();
 
