@@ -15,8 +15,9 @@ function submitHandler(event) {
     const password = document.getElementById('password').value;
 
     if (username === "admin" && password === "admin") {
-        window.location.href = "dashboard.html";
-    } else {
+        window.location.href = "dashboad.html";
+    } 
+    else {
         alert("Invalid username or password");
     }
 }
