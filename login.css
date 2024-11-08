@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-transform: capitalize;
+}
+#login{
+    color: green;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.container1{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    border: 2px solid rgb(201, 196, 196);
+    border-radius: 20px;
+    width: 80vw;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+label{
+    display: block;
+    font-size: larger;
+   
+}
+input{
+    width: 60vw;
+    height: 5vh;
+}
+
+#button{
+   width: 50px;
+   height: 40px;
+   border-radius: 20px;
+   border: none;
+   background-color: green;
+   display: block;
+   margin-top: 20px;
+}
